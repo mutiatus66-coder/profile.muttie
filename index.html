@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muti'atus Sholehah — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo">Muti<span>.</span>dev</div>
+    <div class="nav-links">
+      <a href="#about">Tentang</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#skills">Skill</a>
+      <a href="#certificates">Sertifikat</a>
+      <a href="#achievements">Pengalaman</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Kontak</a>
+      <button id="themeToggle" class="nav-icon" aria-label="Ganti tema">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="border-top:none;">
+    <div>
+      <div class="hero-eyebrow">HAY! THERE</div>
+      <h1>Muti'atus Sholehah</h1>
+      <p>masi belajar Laravel untuk sisi backend, dan HTML/CSS/JS — termasuk bikin game kecil pakai Canvas aku pernah mempelajarinya sedikit.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">Lihat Project</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <!-- <div class="hero-canvas-wrap">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-canvas-tag">canvas demo — gerakkan kursor</div>
+    </div> -->
+  </section>
+
+  <section id="about">
+    <div class="section-head">
+      <h2>Tentang</h2>
+    </div>
+    <div class="about-grid">
+      <div class="avatar-wrap">
+        <img id="profilePhoto" src="mumu.jpeg" alt="Foto Muti'atus Sholehah">
+        <div class="avatar-fallback" id="avatarFallback">MS</div>
+      </div>
+      <div>
+        <p>Halo, saya Muti'atus Sholehah, junior web developer yang senang membangun hal-hal dari nol — mulai dari belajar aplikasi web dengan Laravel sampai mencoba mempelkajari game kecil yang jalan langsung di browser pakai HTML Canvas.</p>
+        <p>Saya suka proyek yang punya sisi statis (landing page, profil, dokumentasi) maupun dinamis (aplikasi dengan data, autentikasi, interaksi real-time). Buat saya, kode yang bagus itu yang jelas dibaca dan enak dipakai orang lain.</p>
+        <p>Saat ini saya siswa SMKN Takeran, jurusan Rekayasa Perangkat Lunak (RPL), dan sedang melaksanakan magang di Dinas Komunikasi dan Informatika Magetan. Saya memiliki pengalaman mengikuti bootcamp di PT Ubig Malang serta pernah berkompetisi di Lomba Kompetensi Siswa (LKS) tingkat provinsi bidang Web Technology.</p>
+        
+        <p>Di luar dunia pemrograman, saya suka menulis dan membaca — baik cerita fiksi maupun non-fiksi. Saya juga memiliki bakat menggambar dan termasuk orang yang cepat memahami pelajaran baru. Saya selalu antusias untuk mengeksplor hal-hal baru dan kehidupan baru.</p>
+        
+        <p>Saya bercita-cita ingin menjadi seorang guru, atau setidaknya menjadi wisudawan pertama di keluarga saya. Saya juga memiliki ketertarikan besar di bidang IoT — di SMKN Takeran, saya mendapatkan ilmu IoT yang cukup membuat saya terkesan.</p>
+
+        <p><strong>Pengalaman Magang di Diskominfo Magetan:</strong> Selama magang, saya belajar banyak tentang Laravel 13, Playwright, Selenium, SQLite, cara menggunakan table, push/pull di GitHub, serta CodeIgniter. Salah satu project yang saya kerjakan adalah <strong>Rumah Inovasi Magetan</strong> yang sudah mencapai 80-90% jadi.</p>
+
+        <div class="bio-grid">
+          <div class="bio-item"><div class="bio-label">Nama Lengkap</div><div class="bio-value">Muti'atus Sholehah</div></div>
+          <div class="bio-item"><div class="bio-label">Sekolah</div><div class="bio-value">SMKN Takeran</div></div>
+          <div class="bio-item"><div class="bio-label">Jurusan</div><div class="bio-value">Rekayasa Perangkat Lunak (RPL)</div></div>
+          <div class="bio-item"><div class="bio-label">Usia</div><div class="bio-value">18 tahun</div></div>
+          <div class="bio-item"><div class="bio-label">Tempat, Tanggal Lahir</div><div class="bio-value">Magetan, 22 Juli 2008</div></div>
+          <div class="bio-item"><div class="bio-label">Alamat</div><div class="bio-value">Njomblang Pupus RT 03 RW 10, Lembeyan, Magetan, Jawa Timur</div></div>
+          <div class="bio-item"><div class="bio-label">Hobi</div><div class="bio-value">Game, Menulis, Membaca (Fiksi & Non-Fiksi)</div></div>
+          <div class="bio-item"><div class="bio-label">Cita-cita</div><div class="bio-value">Guru / Wisudawan Pertama di Keluarga</div></div>
+          <div class="bio-item"><div class="bio-label">Minat Lain</div><div class="bio-value">Membaca, Menulis, Menggambar</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head">
+      <h2>Riwayat Pendidikan</h2>
+      <p>Perjalanan pendidikan dan pengembangan diri</p>
+    </div>
+    <div class="education-timeline">
+      <div class="edu-item">
+        <div class="edu-year">2013 - 2015</div>
+        <div class="edu-content">
+          <h3>TK / PAUD Darrul Mutaqien</h3>
+          <p>Taman Kanak Kanak di Desa Pupus, Kecamatan Lembeyan, Magetan</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2015 - 2021</div>
+        <div class="edu-content">
+          <h3>SDN Pupus 1</h3>
+          <p>Pendidikan dasar di Desa Pupus, Kecamatan Lembeyan, Magetan</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2021 - 2024</div>
+        <div class="edu-content">
+          <h3>MTsN 8 Magetan</h3>
+          <p>Pendidikan menengah pertama dengan fokus pada ilmu pengetahuan dan keagamaan</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2024 - Sekarang</div>
+        <div class="edu-content">
+          <h3>SMKN Takeran</h3>
+          <p>Jurusan Rekayasa Perangkat Lunak (RPL) - Sedang menempuh pendidikan kejuruan. Di sini saya belajar IoT dan pengembangan web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head">
+      <h2>Skill & Tools</h2>
+      <p>Yang biasa saya pakai untuk membangun web dari backend sampai tampilan.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-chip"><div class="name">Laravel</div><div class="role">Backend framework</div></div>
+      <div class="skill-chip"><div class="name">PHP</div><div class="role">Server-side logic</div></div>
+      <div class="skill-chip"><div class="name">HTML</div><div class="role">Struktur halaman</div></div>
+      <div class="skill-chip"><div class="name">CSS</div><div class="role">Styling & layout</div></div>
+      <div class="skill-chip"><div class="name">JavaScript</div><div class="role">Interaktivitas</div></div>
+      <div class="skill-chip"><div class="name">HTML Canvas</div><div class="role">Game & animasi</div></div>
+      <div class="skill-chip"><div class="name">IoT / ESP32</div><div class="role">Ketertarikan di bidang IoT</div></div>
+      <div class="skill-chip"><div class="name">Playwright / Selenium</div><div class="role">Automation testing</div></div>
+      <div class="skill-chip"><div class="name">SQLite / MySQL</div><div class="role">Database</div></div>
+      <div class="skill-chip"><div class="name">CodeIgniter</div><div class="role">PHP Framework</div></div>
+      <div class="skill-chip"><div class="name">Git & GitHub</div><div class="role">Version control</div></div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="section-head">
+      <h2>📜 Sertifikat</h2>
+      <p>Koleksi sertifikat dari berbagai perlombaan dan kegiatan</p>
+    </div>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <div class="cert-thumbnail">
+          <img src="sertifikat2.jpg" alt="Sertifikat Bootcamp PT Ubig" onerror="this.style.display='none'">
+          <div class="cert-placeholder">📄</div>
+        </div>
+        <div class="cert-info">
+          <h4>Bootcamp Web Development</h4>
+          <p>PT Ubig Malang</p>
+          <span class="cert-year">2025</span>
+          <a href="rapotubig.png" target="_blank" class="cert-link">Lihat Sertifikat →</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <div class="cert-thumbnail">
+          <img src="sertifikat3.jpg" alt="Sertifikat LKS Web Tech" onerror="this.style.display='none'">
+          <div class="cert-placeholder">📄</div>
+        </div>
+        <div class="cert-info">
+          <h4>LKS Web Technology</h4>
+          <p>Tingkat Provinsi Jawa Timur</p>
+          <span class="cert-year">2026</span>
+          <a href="lksjatim.png" target="_blank" class="cert-link">Lihat Sertifikat →</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <div class="cert-thumbnail">
+          <img src="sertifikat4.jpg" alt="Sertifikat Magang" onerror="this.style.display='none'">
+          <div class="cert-placeholder">📄</div>
+        </div>
+        <div class="cert-info">
+          <h4>Magang Diskominfo Magetan</h4>
+          <p>Dinas Komunikasi dan Informatika</p>
+          <span class="cert-year">2026</span>
+          <a href="sertifikat4.jpg" target="_blank" class="cert-link">Lihat Sertifikat →</a>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <div class="cert-thumbnail">
+          <img src="sertifikat4.jpg" alt="Dokumentasi DP" onerror="this.style.display='none'">
+          <div class="cert-placeholder">📄</div>
+        </div>
+        <div class="cert-info">
+          <h4>Pramuka & Dewan Penggalang</h4>
+          <p>Pernah mengikuti organisasi Pramuka dan Dewan Penggalang di MTsN 8 Magetan. Bertugas sebagai Seksi Humas (Hubungan Masyarakat) serta menjadi dokumentasi pada setiap acara Pramuka sekolah.</p>
+          <span class="cert-year">2022-2023</span>
+          <a href="dp.jpeg" target="_blank" class="cert-link">Lihat Dokumentasi →</a>
+        </div>
+      </div>
+  </section>
+
+  <section id="achievements">
+    <div class="section-head">
+      <h2>Pengalaman & Prestasi</h2>
+      <p>Lomba, sertifikat, dan pengalaman profesional</p>
+    </div>
+    <div class="achievement-grid">
+      <div class="achievement-card">
+        <div class="ach-icon">🏆</div>
+        <div>
+          <h4>Lomba Mewarnai</h4>
+          <p>Beberapa kali mengikuti lomba mewarnai tingkat sekolah dan kecamatan — mencerminkan bakat menggambar saya sejak kecil.</p>
+          <div class="ach-tags">
+            <span>Sertifikat</span>
+            <span>Penghargaan</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="ach-icon">📜</div>
+        <div>
+          <h4>Koleksi Sertifikat</h4>
+          <p>Memiliki koleksi sertifikat dari berbagai perlombaan dan kegiatan, termasuk bootcamp dan lomba web.</p>
+          <div class="ach-tags">
+            <span>Koleksi</span>
+            <span>Dokumentasi</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="ach-icon">💻</div>
+        <div>
+          <h4>Bootcamp PT Ubig Malang</h4>
+          <p>Pernah mengikuti bootcamp pengembangan web dan teknologi di PT Ubig Malang untuk persiapan LKS.</p>
+          <div class="ach-tags">
+            <span>Bootcamp</span>
+            <span>Pelatihan</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="ach-icon">🏅</div>
+        <div>
+          <h4>LKS Provinsi - Web Tech</h4>
+          <p>Mengikuti Lomba Kompetensi Siswa tingkat provinsi bidang Web Technology sebagai peserta.</p>
+          <div class="ach-tags">
+            <span>Kompetisi</span>
+            <span>Provinsi</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="achievement-card">
+        <div class="ach-icon">🏢</div>
+        <div>
+          <h4>Magang di Diskominfo Magetan</h4>
+          <p>Saat ini sedang melaksanakan praktik kerja lapangan (magang) di Dinas Komunikasi dan Informatika Magetan. Belajar Laravel 13, Playwright, Selenium, SQLite, Git, dan CodeIgniter.</p>
+          <div class="ach-tags">
+            <span>Magang</span>
+            <span>Pengalaman Kerja</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="ach-icon">🤖</div>
+        <div>
+          <h4>IoT & Robotik</h4>
+          <p>Di SMKN Takeran, saya mendapat ilmu IoT yang membuat saya terkesan dan semakin tertarik di bidang robotik dan Internet of Things.</p>
+          <div class="ach-tags">
+            <span>IoT</span>
+            <span>Robotik</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="ach-icon">📖</div>
+        <div>
+          <h4>Penulis & Pembaca</h4>
+          <p>Saya aktif menulis dan membaca cerita fiksi maupun non-fiksi sebagai hobi dan pengembangan diri.</p>
+          <div class="ach-tags">
+            <span>Menulis</span>
+            <span>Membaca</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="ach-icon">⚜️</div>
+        <div>
+          <h4>Pramuka & Dewan Penggalang</h4>
+          <p>Pernah mengikuti organisasi Pramuka dan Dewan Penggalang di MTsN 8 Magetan. Bertugas sebagai Seksi Humas (Hubungan Masyarakat) serta menjadi dokumentasi pada setiap acara Pramuka sekolah.</p>
+          <div class="ach-tags">
+            <span>Organisasi</span>
+            <span>Kepemimpinan</span>
+            <span>Dokumentasi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head">
+      <h2>Project</h2>
+      <p>Beberapa contoh yang pernah saya buat saat di SMKN Takeran dan Diskominfo</p>
+    </div>
+
+    <div class="project">
+      <div class="project-num">01</div>
+      <div>
+        <h3>Project Statis</h3>
+        <p class="desc">Contoh website statis — misal landing page atau profil perusahaan. Ganti dengan deskripsi project kamu: apa masalahnya, apa yang kamu bangun.</p>
+        <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links"><a href="#">Lihat demo →</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-num">02</div>
+      <div>
+        <h3>Nama Project Dinamis</h3>
+        <p class="desc">Contoh aplikasi web dinamis Sebuah Marketplace —  sebuah Marketplace berupa web dinamis berbasis php native.</p>
+        <div class="tech-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+        <div class="project-links"><a href="https://marketplacem.ct.ws/">Lihat project →</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-num">03</div>
+      <div>
+        <h3>Game Canvas</h3>
+        <p class="desc">Contoh game kecil yang dibuat pakai HTML Canvas.</p>
+        <div class="tech-tags"><span>JavaScript</span><span>Canvas</span></div>
+        <div class="project-links"><a href="https://mutiatus66-coder.github.io/Archery-Pop/">Coba sekarang →</a></div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-num">04</div>
+      <div>
+        <h3>Rumah Inovasi Magetan</h3>
+        <p class="desc">Project magang di Diskominfo Magetan — pengembangan platform Rumah Inovasi Magetan (80-90% selesai) menggunakan Laravel 13, SQLite, dan berbagai tools lainnya.</p>
+        <div class="tech-tags"><span>Laravel 13</span><span>SQLite</span><span>Playwright</span><span>Git</span></div>
+        <div class="project-links"><a href="https://github.com/mutiatus66-coder/mantappdh">Lihat project →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-head">
+      <h2>Kontak</h2>
+      <p>Ganti semua link di bawah dengan akun kamu sendiri.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:muti.atus66@smk.belajar.id">
+        <div class="icon">✉️</div>
+        <div><div class="label">Email</div><div class="value">muti.atus66@smk..</div></div>
+      </a>
+      <a class="contact-card" href="https://wa.me/6285736213521" target="_blank" rel="noopener">
+        <div class="icon">💬</div>
+        <div><div class="label">WhatsApp</div><div class="value">+62 857 3621 3521</div></div>
+      </a>
+      <a class="contact-card" href="https://github.com/mutiatus66-coder" target="_blank" rel="noopener">
+        <div class="icon">💻</div>
+        <div><div class="label">GitHub</div><div class="value">@mutiatus66-coder</div></div>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/muti-atus-sholehah" target="_blank" rel="noopener">
+        <div class="icon">🔗</div>
+        <div><div class="label">LinkedIn</div><div class="value">Muti'atus Sholehah</div></div>
+      </a>
+      <a class="contact-card" href="https://www.instagram.com/mtiatss_?igsi=bWZncnNqYmMxbWdn" target="_blank" rel="noopener">
+        <div class="icon">📷</div>
+        <div><div class="label">Instagram</div><div class="value">@mtiatss_</div></div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Muti'atus Sholehah.</footer>
+
+<script>
+  const root = document.documentElement;
+  const toggleBtn = document.getElementById('themeToggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (prefersDark) { root.classList.add('dark'); toggleBtn.textContent = '☀️'; }
+
+  toggleBtn.addEventListener('click', () => {
+    root.classList.toggle('dark');
+    toggleBtn.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
+  });
+
+  const photo = document.getElementById('profilePhoto');
+  const fallback = document.getElementById('avatarFallback');
+  photo.addEventListener('load', () => {
+    photo.style.display = 'block';
+    fallback.style.display = 'none';
+  });
+  photo.addEventListener('error', () => {
+    photo.style.display = 'none';
+    fallback.style.display = 'flex';
+  });
+  photo.src = photo.src;
+
+  const canvas = document.getElementById('heroCanvas');
+  const ctx = canvas.getContext('2d');
+  let w, h, particles = [];
+  const mouse = { x: null, y: null };
+
+  function resize() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = rect.width * devicePixelRatio;
+    canvas.height = rect.height * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+    w = rect.width; h = rect.height;
+  }
+
+  function getAccent() {
+    return getComputedStyle(root).getPropertyValue('--accent').trim();
+  }
+  function getAccent2() {
+    return getComputedStyle(root).getPropertyValue('--accent-2').trim();
+  }
+
+  function initParticles() {
+    particles = [];
+    const count = Math.floor((w * h) / 9000);
+    for (let i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        r: Math.random() * 2 + 1.5,
+        c: Math.random() > 0.5 ? getAccent() : getAccent2()
+      });
+    }
+  }
+
+  function step() {
+    ctx.clearRect(0, 0, w, h);
+    for (const p of particles) {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+
+      if (mouse.x !== null) {
+        const dx = p.x - mouse.x, dy = p.y - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 90) {
+          p.x += dx / dist * 1.2;
+          p.y += dy / dist * 1.2;
+        }
+      }
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.c;
+      ctx.fill();
+    }
+
+    ctx.lineWidth = 0.6;
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const a = particles[i], b = particles[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 70) {
+          ctx.strokeStyle = a.c;
+          ctx.globalAlpha = 1 - dist / 70;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+          ctx.globalAlpha = 1;
+        }
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  canvas.parentElement.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+  canvas.parentElement.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
+
+  window.addEventListener('resize', () => { resize(); initParticles(); });
+  toggleBtn.addEventListener('click', () => setTimeout(initParticles, 50));
+
+  resize();
+  initParticles();
+  step();
+</script>
+
+</body>
+</html>
